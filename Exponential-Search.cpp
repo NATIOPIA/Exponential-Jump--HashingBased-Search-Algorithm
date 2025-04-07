@@ -4,11 +4,14 @@ using namespace std;
 // Binary Search Implementation for Exponential Search
 int binarySearch(int arr[], int low, int high, int target) 
 {
-    while (low <= high) {
+    while (low <= high) 
+    {
         int mid = low + (high - low) / 2;
-        if (arr[mid] == target) {
+        if (arr[mid] == target) 
+        {
             return mid; // Target found
-        } else if (arr[mid] < target) {
+        } else if (arr[mid] < target) 
+        {
             low = mid + 1; // Search right half
         } else {
             high = mid - 1; // Search left half
@@ -20,12 +23,14 @@ int binarySearch(int arr[], int low, int high, int target)
 // Exponential Search
 int exponentialSearch(int arr[], int size, int target) 
 {
-    if (arr[0] == target) {
+    if (arr[0] == target) 
+    {
         return 0; // If the target is the first element
     }
 
     int bound = 1;
-    while (bound < size && arr[bound] < target) {
+    while (bound < size && arr[bound] < target) 
+    {
         bound *= 2; // Double the bound
     }
 
@@ -40,7 +45,8 @@ int main() {
     int target = 7;
 
     int result = exponentialSearch(arr, size, target);
-    if (result != -1) {
+    if (result != -1) 
+    {
         cout << "Target found at index: " << result << endl;
     } else {
         cout << "Target not found in the array." << endl;
