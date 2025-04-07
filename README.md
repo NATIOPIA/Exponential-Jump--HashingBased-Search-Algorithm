@@ -25,14 +25,20 @@
 
 ### Comparison of Exponential, Jump, and Hashing-based Search
 ### Algorithm	    Best      Worst       Space             Use Case
-                    Case 	  Case	    Complexity	
+                  Case 	    Case	    Complexity	
 
-Exponential 	    O(1)	 O(log n)	   O(1)	      * Sorted arrays, 
-Search                                            large data with unknown 
-                                                  size.
+Exponential 	    O(1)	 O(log n)	   O(1)	             * Sorted arrays, 
+Search                                               large data with unknown 
+                                                     size.
 
-Jump        	    O(1)	   O(√n)	   O(1)	      * Sorted arrays,    Search                                             when binary search     
-                                                   can't be used.
-Hashing	            O(1)	   O(n)	       O(n)	     * Large datasets with
+Jump        	    O(1)	   O(√n)	   O(1)	             * Sorted arrays, when binary search     
+Search                                                 can't be used.
+
+Hashing	            O(1)	   O(n)	       O(n)	        * Large datasets with
                                                      fast lookup requiring
                                                      constant-time access.
+## Student Informaint
+  * Name: Natnael Tsedeke
+  * ID: RMNS-7783/23
+  * Course: DSA
+                                                     
